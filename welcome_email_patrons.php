@@ -13,8 +13,8 @@ $yesterday          = date('Y-m-d', strtotime('-1 day', $today));
 $firstDayOfNextMonth = date("Y-m-d", strtotime("first day of next month midnight"));
 $lastDayOfNextMonth = date("Y-m-d", strtotime("last day of next month midnight"));
 
-//json query built from Sierra Create Lists that gets a list of expiring patrons
-//that will expire the next month.
+//json query built from Sierra Create Lists that gets a list of patrons
+//who registered yesterday at the library
 $query_string = '
 {
   "target": {
